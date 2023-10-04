@@ -2,7 +2,24 @@ img{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
 }
-h1,h3,.bio{
+h1,h3,.bio,.program,.socials{
     text-align: center;
+}
+.menu{
+    width: 70%;
+    max-width: 70%;
+}
+.gender{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: none;
+    margin-top: -10px;
+}
+table{
+    margin-top: -2px;
+    width: 100%;
 }

@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 img{
     display: block;
     margin-left: auto;
@@ -9,11 +12,11 @@ body{
     background-size: cover;
 }
 
-.bio,.program{
+.program{
     text-align: center;
 
 }
-h1,h3{
+h1,h3.id{
     margin-left: auto;
     margin-right: auto;
     text-align: left;
@@ -93,20 +96,56 @@ th.top{
     display: block;
     transition: .5s ease;
     backface-visibility: hidden;
+    height: 50%;
+    width: 50%;
 }
-.html:hover{
-    opacity: 1;
-}
-.html{
-    transition: .5s ease;
-    opacity: 1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    -ms-transform: (-50%,-50%);
+.bio{
     text-align: center;
+    font-size: 20px;
 }
-.text{
+.leftside{
+    width: 25%;
+    float: left;
+}
+.mainside{
+    width: 75%;
+    float: left;
+}
+.edu{
+    text-decoration: none;
     color: white;
 }
+ol,ul{
+    margin: 0;
+    padding: 0;
+}
+.education{
+    font-size: 20px;
+}
+@media only screen and (max-width: 768px) {
+    .subcontent,.leftside{
+        display: block;
+        width: 100%;
+        float: none;
+    }
+    ol{
+        display: block;
+        width: 100%;
+    }
+    .rightside{
+        display: block;
+        width: 100%;
+        float: none;
+    }
+    .logo{
+        height: 50%;
+        width: 50%;
+    }
+    [class*="col-"] {
+      width: 100%;
+    }
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+  }

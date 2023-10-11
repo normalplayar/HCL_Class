@@ -19,8 +19,12 @@ h1,h3{
     text-align: left;
     max-width: 100%;
 }
+h1.top{
+    padding: 15px;
+    text-align: center;
+}
 hr{
-    height: 2px;
+    height: 3px;
     border-color: rgb(63, 63, 255);
     background-color: rgb(63, 63, 255);
 }  
@@ -33,6 +37,7 @@ hr{
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 10px;
+    padding-top: -15px;
     text-decoration: none;
 }
 .navtop a:hover{
@@ -66,4 +71,42 @@ table{
 }
 .small,.socials{
     line-height: .4;
+}
+.content{
+    width: 75%;
+    float: left;
+}
+.subcontent{
+    width: 25%;
+    float: left;   
+    background-image: linear-gradient(cyan,rgb(198, 250, 250));
+}
+th.top{
+    padding: 15px;
+    text-align: center;
+}
+.logo:hover{
+    opacity: 0.3;
+}
+.logo{
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.html:hover{
+    opacity: 1;
+}
+.html{
+    transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: (-50%,-50%);
+    text-align: center;
+}
+.text{
+    color: white;
 }

@@ -4,8 +4,42 @@ img{
     margin-right: auto;
     max-width: 100%;
 }
-h1,h3,.bio,.program,.socials{
+body{
+    background-image: url(https://cdn.discordapp.com/attachments/1161518293929168936/1161518779361144873/bg.png?ex=653897a8&is=652622a8&hm=90098b28154900923a5f6e6e8f0ba5f2281ce4ddf3ff0479bf79729cc7a08285&);
+    background-size: cover;
+}
+
+.bio,.program,.socials{
     text-align: center;
+}
+h1,h3{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    max-width: 100%;
+}
+hr{
+    height: 2px;
+    border-color: rgb(63, 63, 255);
+    background-color: rgb(63, 63, 255);
+}  
+.navtop {
+    height: 27px;
+    background-color: rgb(63, 63, 255);
+    text-align: center;
+}   
+.navtop a{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+.navtop a:hover{
+    background-color: black;
+    color: white;
+}
+th{
+    width: 50%;
 }
 .menu{
     width: 70%;

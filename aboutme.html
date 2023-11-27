@@ -4,7 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="jquery-3.7.1.min.js"></script>
     <title>About me</title>
+    <script>
+        $(document).ready(function(){
+            $("li").hide("slow")
+        });
+        $(document).ready(function(){
+            $(".toggle1").click(function(){
+                $(".list1").toggle("slow");
+            });
+        });
+        $(document).ready(function(){
+            $(".toggle2").click(function(){
+                $(".list2").toggle("slow");
+            });
+        });
+        $(document).ready(function(){
+            $(".toggle3").click(function(){
+                $(".list3").toggle("slow");
+            });
+        });
+        $(document).ready(function(){
+            $(".foto").fadeIn("slow");
+        });
+    </script>
 </head>
 <body>
     <div class="w3-bar w3-black">
@@ -19,7 +43,7 @@
             <th></th>
         </tr>
         <tr>
-        <td><img src="https://stbm7resourcesprod.blob.core.windows.net/profilepicture/aa479137-79df-495f-9c6e-93fa1a49eabd.jpg" class="w3-border w3-padding"class="w3-border w3-padding" title="You can cell me Chris!" alt="My profile picture"></td>
+        <td><img src="https://stbm7resourcesprod.blob.core.windows.net/profilepicture/aa479137-79df-495f-9c6e-93fa1a49eabd.jpg" class="w3-border w3-padding foto" title="You can cell me Chris!" alt="My profile picture"></td>
         <td><h1>Chris Satria Hung</h1>
             <h3>2702337142</h3></td>
     </tr>
@@ -28,24 +52,24 @@
     <div class="w3-cell-row">
         <div class="w3-quarter w3-container w3-light-blue w3-cell">
             <ol class="w3-ul w3-card-4">
-                <h2>Education </h2>
-                <li class="w3-hover-green"><a href="https://www.technosa.sch.id/" class="edu">TEchnoSA</a> (2005-2014) from begining of my education until grade 4 semester 2</li>
-                <li class="w3-hover-green"><a href="https://serpong.binus.sch.id/" class="edu">BINUS School Serpong </a> (2014-2023) then I moved from that homeschool to an "international" school BINUS (due to legal reason they can't be label as international school or something)</li>
-                <li class="w3-hover-green"><a href="https://international.binus.ac.id/" class="edu">BINUS University International</a> (2023-present) and here I am studying in an university owned by BINUS, again</li>
+                <h2 class="toggle1">Education </h2>
+                <li class="w3-hover-green list1 list1"><a href="https://www.technosa.sch.id/" class="edu">TEchnoSA</a> (2005-2014) from begining of my education until grade 4 semester 2</li>
+                <li class="w3-hover-green list1 list1"><a href="https://serpong.binus.sch.id/" class="edu">BINUS School Serpong </a> (2014-2023) then I moved from that homeschool to an "international" school BINUS (due to legal reason they can't be label as international school or something)</li>
+                <li class="w3-hover-green list1 list1"><a href="https://international.binus.ac.id/" class="edu">BINUS University International</a> (2023-present) and here I am studying in an university owned by BINUS, again</li>
             </ol>
         </div>
         <div class="w3-half w3-container w3-blue w3-cell">
-            <h1 class="top">About me</h1>
-            <p class="bio">My name is Chris Satria Hung and born in Tangerang on 13th December 2005. Currently Im in BINUS University International batch 2027 studying computer science major and feeling excited for what comes in my future.</p>
+            <h1 class="top toggle2">About me</h1>
+            <p class="bio list2">My name is Chris Satria Hung and born in Tangerang on 13th December 2005. Currently Im in BINUS University International batch 2027 studying computer science major and feeling excited for what comes in my future.</p>
             </div>
 <div class="w3-quarter w3-container w3-light-blue w3-cell">
     <ul class="w3-ul w3-card-4">
-        <h2>Interest </h2>
-        <li class="w3-hover-green">My hobbies include: drawing pixelart,walking and thinking, </li>
-        <li class="w3-hover-green">My interest can be: looking at someone's art, psychology and biking,</li>
-        <li class="w3-hover-green">My favorite color? Don't have one I guess,</li>
-        <li class="w3-hover-green">My favorite video game? Honkai impact 3rd,</li>
-        <li class="w3-hover-green ">My favorite quote? "There are no sides. Only people who help you and people who don't." by Jessica Hyde from the British show Utopia.</li>
+        <h2 class="toggle3">Interest </h2>
+        <li class="w3-hover-green list3">My hobbies include: drawing pixelart,walking and thinking, </li>
+        <li class="w3-hover-green list3">My interest can be: looking at someone's art, psychology and biking,</li>
+        <li class="w3-hover-green list3">My favorite color? Don't have one I guess,</li>
+        <li class="w3-hover-green list3">My favorite video game? Honkai impact 3rd,</li>
+        <li class="w3-hover-green list3">My favorite quote? "There are no sides. Only people who help you and people who don't." by Jessica Hyde from the British show Utopia.</li>
     </ul>
 </div>
 <div class="w3-container w3-blue">
